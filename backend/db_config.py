@@ -31,9 +31,6 @@ def get_db_connection():
         if not init_db_pool():
             return []
 
-    # --- AQUI ESTÁ O SEGREDO DO SUCESSO ---
-    # Estamos dividindo os valores gigantes para que fiquem em escalas reais.
-    # Ex: 30000000 viram 30.0
     sql = """
     SELECT 
         -- Umidade: Se estiver gigante, divide por 1 milhão. Se não, mantém.
