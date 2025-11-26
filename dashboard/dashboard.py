@@ -68,7 +68,7 @@ if btn_prever:
                       value = f"{predicao_kg:,.2f} kg",
                       delta = "Baseado nos sensores atuais")
 
-            # --- CORREÇÃO DO ERRO DO GRÁFICO AQUI ---
+           
             # Agora tem 4 nomes e 4 valores. 
             chart_data = pd.DataFrame({
                 "Métricas": ["Umidade", "pH", "Temperatura", "NPK"],
